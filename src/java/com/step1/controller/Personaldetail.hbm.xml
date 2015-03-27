@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 13, 2015 5:27:18 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="com.step1.controller.Personaldetail" table="personaldetail" catalog="permision">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="name" type="string">
+            <column name="name" length="65535" />
+        </property>
+        <property name="address" type="string">
+            <column name="address" length="65535" />
+        </property>
+        <property name="emailId" type="string">
+            <column name="emailId" length="65535" />
+        </property>
+        <property name="contact" type="string">
+            <column name="contact" length="65535" />
+        </property>
+        <property name="profileId" type="string">
+            <column name="profileId" length="65535" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="permision" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="288"/>
+	<field name="profileId" class="java.lang.String"/>
+	<field name="name" class="java.lang.String"/>
+	<field name="emblem" class="java.lang.String"/>
+	<field name="logo" class="java.lang.String"/>
+	<field name="sign" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="129" splitType="Stretch">
+			<image>
+				<reportElement x="248" y="1" width="113" height="100"/>
+				<imageExpression><![CDATA[$F{emblem}]]></imageExpression>
+			</image>
+			<line>
+				<reportElement x="2" y="125" width="553" height="1"/>
+			</line>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="35" splitType="Stretch">
+			<textField>
+				<reportElement x="412" y="10" width="143" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{profileId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="48" y="10" width="248" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="504" splitType="Stretch">
+			<staticText>
+				<reportElement x="1" y="8" width="554" height="51"/>
+				<textElement/>
+				<text><![CDATA[POINT 1 : Application in Form-A Scheduled-III duly filled in without any blank, should be addressed to
+                 Commissioner of Police, Hyderabad and submitted to the concerned Zonal Dy.
+                 Commissioners of Police of their residential areas for its process. Application should accompany 
+                 with the following documents.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="68" width="554" height="51"/>
+				<textElement/>
+				<text><![CDATA[POINT 2 : Application in Form-A Scheduled-III duly filled in without any blank, should be addressed to
+                 Commissioner of Police, Hyderabad and submitted to the concerned Zonal Dy.
+                 Commissioners of Police of their residential areas for its process. Application should accompany 
+                 with the following documents.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="127" width="554" height="51"/>
+				<textElement/>
+				<text><![CDATA[POINT 3 : Application in Form-A Scheduled-III duly filled in without any blank, should be addressed to
+                 Commissioner of Police, Hyderabad and submitted to the concerned Zonal Dy.
+                 Commissioners of Police of their residential areas for its process. Application should accompany 
+                 with the following documents.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="187" width="554" height="51"/>
+				<textElement/>
+				<text><![CDATA[POINT 4 : Application in Form-A Scheduled-III duly filled in without any blank, should be addressed to
+                 Commissioner of Police, Hyderabad and submitted to the concerned Zonal Dy.
+                 Commissioners of Police of their residential areas for its process. Application should accompany 
+                 with the following documents.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="54" y="334" width="181" height="20"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[AUTHORISED SIGNATORY]]></text>
+			</staticText>
+			<image>
+				<reportElement x="77" y="251" width="322" height="78"/>
+				<imageExpression><![CDATA[$F{sign}]]></imageExpression>
+			</image>
+			<line>
+				<reportElement x="0" y="368" width="554" height="1"/>
+			</line>
+			<image>
+				<reportElement x="52" y="388" width="127" height="78"/>
+				<imageExpression><![CDATA[$F{logo}]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="185" y="390" width="232" height="33"/>
+				<textElement>
+					<font size="20"/>
+				</textElement>
+				<text><![CDATA[|| सद् रक्षनाय खलनिग्रहणाय ||]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="424" y="392" width="100" height="31"/>
+				<textElement/>
+				<text><![CDATA[Need Help With Your 
+Permision ?]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="424" y="427" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Call Us : 087-876356]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="424" y="448" width="129" height="20"/>
+				<textElement/>
+				<text><![CDATA[care@getmepermision.in]]></text>
+			</staticText>
+			<line>
+				<reportElement x="1" y="481" width="554" height="1"/>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="24" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
